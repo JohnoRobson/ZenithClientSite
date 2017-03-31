@@ -349,6 +349,9 @@ var EventViewComponent = (function () {
                 _this.entries.push(new __WEBPACK_IMPORTED_MODULE_3__event_entry__["a" /* EventEntry */](date, _this.getActivitiesInDay(date)));
             }
         });
+        this.entries.sort(function (a, b) {
+            return a.date.getTime() - b.date.getTime();
+        });
     };
     EventViewComponent.prototype.getActivitiesInDay = function (date) {
         var _this = this;

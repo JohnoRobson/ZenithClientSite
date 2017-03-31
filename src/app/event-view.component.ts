@@ -53,6 +53,10 @@ export class EventViewComponent implements OnInit {
                 this.entries.push(new EventEntry(date, this.getActivitiesInDay(date)));
              }
         });
+
+        this.entries.sort((a: EventEntry, b: EventEntry) => {
+            return a.date.getTime() - b.date.getTime();
+         });
     }
 
     getActivitiesInDay(date: Date): Event[] {
