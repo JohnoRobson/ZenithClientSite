@@ -89,7 +89,7 @@ export class EventViewComponent implements OnInit {
 
     ngOnInit(): void {
         this.isLoggedIn = this.tokenService.isLoggedIn();
-        this.route.params
+        /*this.route.params
         .subscribe(param => {
             this.id = param['id'];
             if (this.id == undefined) {
@@ -97,7 +97,18 @@ export class EventViewComponent implements OnInit {
             }
             this.nextId = (this.id - 1);
             this.previousId = (Number(this.id) + 1);
-        });
+        });*/
+        this.id = 0;
+        this.getEvents();
+    }
+
+    navForward(): void {
+        this.id--;
+        this.getEvents();
+    }
+
+    navBackward(): void {
+        this.id++;
         this.getEvents();
     }
 }

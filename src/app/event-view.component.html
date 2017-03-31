@@ -6,7 +6,7 @@
         </tr>
     </table>
     <div class="col-md-12 text-center">
-        <a class="btn btn-lg btn-danger" role="button" href="/events/{{nextId}}" routerLinkActive="active" [hidden]="!isLoggedIn"> < </a>
-        <a class="btn btn-lg btn-danger" role="button" href="/events/{{previousId}}" routerLinkActive="active" [hidden]="!isLoggedIn"> > </a>
+        <button class="btn btn-lg btn-danger" (click)="navForward()" *ngIf="isLoggedIn"> </button>
+        <button class="btn btn-lg btn-danger" (click)="navBackward()" *ngIf="isLoggedIn"> </button>
     </div>
 </div>

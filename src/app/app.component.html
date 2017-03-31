@@ -15,9 +15,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-">
         <li><a routerLink="/events" routerLinkActive="active">EVENTS</a></li>
-        <li><a [hidden]="tokenService.isLoggedIn()" routerLink="/login" routerLinkActive="active">LOGIN</a></li>
+        <li><a *ngIf="!tokenService.isLoggedIn()" routerLink="/login" routerLinkActive="active">LOGIN</a></li>
         <li><a routerLink="/register" routerLinkActive="active">REGISTER</a></li>
-        <li><a [hidden]="!tokenService.isLoggedIn()" routerLink="/login" routerLinkActive="active" (click)="logout()">LOGOUT</a></li>
+        <li><a *ngIf="tokenService.isLoggedIn()" routerLink="/login" routerLinkActive="active" (click)="logout()">LOGOUT</a></li>
       </ul>
     </div>
   </div>
