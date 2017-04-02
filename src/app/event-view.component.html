@@ -2,11 +2,11 @@
     <h1 class="form-account-heading">Events</h1>    
     <table class="table table-hover table-bordered">
         <tr *ngFor="let entry of entries">
-            <event-entry [entry]="entry" [hidden]="entry.allAreInactive() && !isLoggedIn"></event-entry>
+            <event-entry [entry]="entry"></event-entry>
         </tr>
     </table>
     <div class="col-md-12 text-center">
-        <button class="btn btn-lg btn-danger" (click)="navForward()" *ngIf="isLoggedIn"> </button>
-        <button class="btn btn-lg btn-danger" (click)="navBackward()" *ngIf="isLoggedIn"> </button>
+        <button class="btn btn-lg btn-danger" (click)="navForward()" *ngIf="isLoggedIn"> < </button>
+        <button class="btn btn-lg btn-danger" (click)="navBackward()" *ngIf="isLoggedIn"> > </button>
     </div>
 </div>
