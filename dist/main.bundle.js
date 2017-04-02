@@ -30,10 +30,10 @@ var EventEntry = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(676);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(674);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__token_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__token_service__ = __webpack_require__(79);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -108,7 +108,7 @@ webpackEmptyContext.id = 388;
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(476);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(512);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(511);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(507);
 
 
@@ -127,7 +127,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__token_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__token_service__ = __webpack_require__(79);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -151,8 +151,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(668),
-            styles: [__webpack_require__(666)]
+            template: __webpack_require__(667),
+            styles: [__webpack_require__(665)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__token_service__["a" /* TokenService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__token_service__["a" /* TokenService */]) === 'function' && _a) || Object])
     ], AppComponent);
@@ -167,18 +167,17 @@ var AppComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(148);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(467);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(325);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(506);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__event_service__ = __webpack_require__(332);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__event_view_component__ = __webpack_require__(509);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__event_entry_component__ = __webpack_require__(508);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__login_component__ = __webpack_require__(510);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__register_component__ = __webpack_require__(511);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__token_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__token_service__ = __webpack_require__(79);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -200,7 +199,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var AppModule = (function () {
     function AppModule() {
     }
@@ -210,8 +208,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_7__event_view_component__["a" /* EventViewComponent */],
                 __WEBPACK_IMPORTED_MODULE_8__event_entry_component__["a" /* EventEntryComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__login_component__["a" /* LoginComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__register_component__["a" /* RegisterComponent */]
+                __WEBPACK_IMPORTED_MODULE_9__login_component__["a" /* LoginComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -228,14 +225,11 @@ var AppModule = (function () {
                         path: 'login', component: __WEBPACK_IMPORTED_MODULE_9__login_component__["a" /* LoginComponent */]
                     },
                     {
-                        path: 'register', component: __WEBPACK_IMPORTED_MODULE_10__register_component__["a" /* RegisterComponent */]
-                    },
-                    {
-                        path: 'events/:id', component: __WEBPACK_IMPORTED_MODULE_7__event_view_component__["a" /* EventViewComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_11__token_service__["a" /* TokenService */]]
+                        path: 'events/:id', component: __WEBPACK_IMPORTED_MODULE_7__event_view_component__["a" /* EventViewComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_10__token_service__["a" /* TokenService */]]
                     }
                 ])
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_6__event_service__["a" /* EventService */], __WEBPACK_IMPORTED_MODULE_11__token_service__["a" /* TokenService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_6__event_service__["a" /* EventService */], __WEBPACK_IMPORTED_MODULE_10__token_service__["a" /* TokenService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]],
         }), 
         __metadata('design:paramtypes', [])
@@ -252,7 +246,7 @@ var AppModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__event_entry__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__token_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__token_service__ = __webpack_require__(79);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventEntryComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -277,7 +271,7 @@ var EventEntryComponent = (function () {
     EventEntryComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'event-entry',
-            template: __webpack_require__(669)
+            template: __webpack_require__(668)
         }), 
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__token_service__["a" /* TokenService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__token_service__["a" /* TokenService */]) === 'function' && _b) || Object])
     ], EventEntryComponent);
@@ -296,7 +290,7 @@ var EventEntryComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(325);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__event_service__ = __webpack_require__(332);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__event_entry__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__token_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__token_service__ = __webpack_require__(79);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventViewComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -413,8 +407,8 @@ var EventViewComponent = (function () {
     EventViewComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'event-view',
-            template: __webpack_require__(670),
-            styles: [__webpack_require__(667)]
+            template: __webpack_require__(669),
+            styles: [__webpack_require__(666)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__event_service__["a" /* EventService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__event_service__["a" /* EventService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__token_service__["a" /* TokenService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__token_service__["a" /* TokenService */]) === 'function' && _c) || Object])
     ], EventViewComponent);
@@ -430,8 +424,8 @@ var EventViewComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__token_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__token_service__ = __webpack_require__(79);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -467,7 +461,7 @@ var LoginComponent = (function () {
     LoginComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'login',
-            template: __webpack_require__(671)
+            template: __webpack_require__(670)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__token_service__["a" /* TokenService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__token_service__["a" /* TokenService */]) === 'function' && _b) || Object])
     ], LoginComponent);
@@ -479,59 +473,6 @@ var LoginComponent = (function () {
 /***/ }),
 
 /***/ 511:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__token_service__ = __webpack_require__(65);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var RegisterComponent = (function () {
-    function RegisterComponent(http, tokenService) {
-        this.http = http;
-        this.tokenService = tokenService;
-        this.URL = 'http://zenith-society-nj-core.azurewebsites.net/Account/Register';
-    }
-    RegisterComponent.prototype.onSubmit = function () { this.register(this.username, this.password, this.email, this.firstname, this.lastname); };
-    RegisterComponent.prototype.register = function (username, password, email, firstname, lastname) {
-        var _this = this;
-        var creds = 'username=' + username + '&password=' + password + '&confirmpassword=' + password + '&email=' + email + '&firstname=' + firstname + '&lastname=' + lastname;
-        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
-        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* RequestOptions */]({ headers: headers });
-        return this.http.post(this.URL, creds, options)
-            .toPromise()
-            .then(function (r) {
-            var user = r.json();
-            _this.tokenService.setToken(user["access_token"]);
-        });
-    };
-    RegisterComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-            selector: 'register',
-            template: __webpack_require__(672)
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__token_service__["a" /* TokenService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__token_service__["a" /* TokenService */]) === 'function' && _b) || Object])
-    ], RegisterComponent);
-    return RegisterComponent;
-    var _a, _b;
-}());
-//# sourceMappingURL=C:/Git/ZenithClientSite/src/register.component.js.map
-
-/***/ }),
-
-/***/ 512:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -547,7 +488,57 @@ var environment = {
 
 /***/ }),
 
-/***/ 65:
+/***/ 665:
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ 666:
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ 667:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"jumbotron text-center\">\r\n  <h1>\r\n    {{title}}\r\n  </h1>\r\n</div>\r\n<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span> \r\n      </button>\r\n       <a class=\"navbar-brand\" *ngIf=\"tokenService.isLoggedIn()\">You are logged in</a>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li><a routerLink=\"/events\" routerLinkActive=\"active\">EVENTS</a></li>\r\n        <li><a *ngIf=\"!tokenService.isLoggedIn()\" routerLink=\"/login\" routerLinkActive=\"active\">LOGIN</a></li>\r\n        <li><a *ngIf=\"tokenService.isLoggedIn()\" routerLink=\"/login\" routerLinkActive=\"active\" (click)=\"logout()\">LOGOUT</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n<router-outlet></router-outlet>\r\n"
+
+/***/ }),
+
+/***/ 668:
+/***/ (function(module, exports) {
+
+module.exports = "<tr><p>{{entry.date | date: 'EEEE MMMM d, y'}}</p></tr>\r\n<tr *ngFor=\"let event of entry.events\">\r\n    <td><p>{{event.activity.activityDescription}}</p></td>\r\n    <td [hidden]=\"!tokenService.isLoggedIn() && !event.isActive\"><p>{{event.eventFromDate | date: 'hh:mm:a'}} - {{event.eventToDate | date: 'hh:mm:a'}}</p></td>\r\n</tr>"
+
+/***/ }),
+
+/***/ 669:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n    <h1 class=\"form-account-heading\">Events</h1>    \r\n    <table class=\"table table-hover table-bordered\">\r\n        <tr *ngFor=\"let entry of entries\">\r\n            <event-entry [entry]=\"entry\"></event-entry>\r\n        </tr>\r\n    </table>\r\n    <div class=\"col-md-12 text-center\">\r\n        <button class=\"btn btn-lg btn-danger\" (click)=\"navForward()\" *ngIf=\"isLoggedIn\"> < </button>\r\n        <button class=\"btn btn-lg btn-danger\" (click)=\"navBackward()\" *ngIf=\"isLoggedIn\"> > </button>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ 670:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n    <form class=\"form-account\" (ngSubmit)=\"onSubmit()\" [hidden]=\"tokenService.isLoggedIn()\">\r\n        <h1 class=\"form-account-heading text-muted\">Login</h1>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Enter Username\" name=\"username\" required=\"\" autofocus=\"\" />\r\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" placeholder=\"Enter Password\" name=\"password\" required=\"\" />\r\n        <button class=\"btn btn-lg btn-danger btn-block\" type=\"submit\">Login</button>\r\n    </form>\r\n    <h1 class=\"form-account-heading\" *ngIf=\"tokenService.isLoggedIn()\">You are logged in</h1>\r\n</div>"
+
+/***/ }),
+
+/***/ 688:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(389);
+
+
+/***/ }),
+
+/***/ 79:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -594,64 +585,7 @@ var TokenService = (function () {
 }());
 //# sourceMappingURL=C:/Git/ZenithClientSite/src/token.service.js.map
 
-/***/ }),
-
-/***/ 666:
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ 667:
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ 668:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"jumbotron text-center\">\r\n  <h1>\r\n    {{title}}\r\n  </h1>\r\n</div>\r\n<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span> \r\n      </button>\r\n       <a class=\"navbar-brand\" *ngIf=\"tokenService.isLoggedIn()\">You are logged in</a>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li><a routerLink=\"/events\" routerLinkActive=\"active\">EVENTS</a></li>\r\n        <li><a routerLink=\"/register\" routerLinkActive=\"active\">REGISTER</a></li>\r\n        <li><a *ngIf=\"!tokenService.isLoggedIn()\" routerLink=\"/login\" routerLinkActive=\"active\">LOGIN</a></li>\r\n        <li><a *ngIf=\"tokenService.isLoggedIn()\" routerLink=\"/login\" routerLinkActive=\"active\" (click)=\"logout()\">LOGOUT</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n<router-outlet></router-outlet>\r\n"
-
-/***/ }),
-
-/***/ 669:
-/***/ (function(module, exports) {
-
-module.exports = "<tr><p>{{entry.date | date: 'EEEE MMMM d, y'}}</p></tr>\r\n<tr *ngFor=\"let event of entry.events\">\r\n    <td><p>{{event.activity.activityDescription}}</p></td>\r\n    <td [hidden]=\"!tokenService.isLoggedIn() && !event.isActive\"><p>{{event.eventFromDate | date: 'hh:mm:a'}} - {{event.eventToDate | date: 'hh:mm:a'}}</p></td>\r\n</tr>"
-
-/***/ }),
-
-/***/ 670:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n    <h1 class=\"form-account-heading\">Events</h1>    \r\n    <table class=\"table table-hover table-bordered\">\r\n        <tr *ngFor=\"let entry of entries\">\r\n            <event-entry [entry]=\"entry\" [hidden]=\"entry.allAreInactive() && !isLoggedIn\"></event-entry>\r\n        </tr>\r\n    </table>\r\n    <div class=\"col-md-12 text-center\">\r\n        <button class=\"btn btn-lg btn-danger\" (click)=\"navForward()\" *ngIf=\"isLoggedIn\"> </button>\r\n        <button class=\"btn btn-lg btn-danger\" (click)=\"navBackward()\" *ngIf=\"isLoggedIn\"> </button>\r\n    </div>\r\n</div>"
-
-/***/ }),
-
-/***/ 671:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n    <form class=\"form-account\" (ngSubmit)=\"onSubmit()\" [hidden]=\"tokenService.isLoggedIn()\">\r\n        <h1 class=\"form-account-heading text-muted\">Login</h1>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Enter Username\" name=\"username\" required=\"\" autofocus=\"\" />\r\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" placeholder=\"Enter Password\" name=\"password\" required=\"\" />\r\n        <button class=\"btn btn-lg btn-danger btn-block\" type=\"submit\">Login</button>\r\n    </form>\r\n    <h1 class=\"form-account-heading\" *ngIf=\"tokenService.isLoggedIn()\">You are logged in</h1>\r\n</div>"
-
-/***/ }),
-
-/***/ 672:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n    <form class=\"form-account\" (ngSubmit)=\"onSubmit()\">\r\n        <h1 class=\"form-account-heading text-muted\">Register</h1>\r\n        <label>Username: </label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Enter Username\" name=\"username\" required />\r\n        <br />\r\n        <label>Password: </label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"password\" placeholder=\"Enter Password\" name=\"password\" required />\r\n        <br />\r\n        <label>Email: </label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"email\" placeholder=\"Enter Email\" name=\"email\" required />\r\n        <br />\r\n        <label>First Name: </label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"firstname\" placeholder=\"Enter First Name\" name=\"firstname\" required />\r\n        <br />\r\n        <label>Last Name: </label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"lastname\" placeholder=\"Enter Last Name\" name=\"lastname\" required />\r\n        <br />\r\n        <button class=\"btn btn-lg btn-danger btn-block\" type=\"submit\" >Register</button>\r\n    </form>\r\n</div>"
-
-/***/ }),
-
-/***/ 690:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(389);
-
-
 /***/ })
 
-},[690]);
+},[688]);
 //# sourceMappingURL=main.bundle.map
