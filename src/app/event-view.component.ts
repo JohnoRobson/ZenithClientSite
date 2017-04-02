@@ -47,12 +47,18 @@ export class EventViewComponent implements OnInit {
     generateEntries(): void {
         this.entries = [];
 
+        if (this.isLoggedIn) {
         this.dates.forEach(date => {
             if (date.getTime() >= this.changeDateBy(this.getStartOfWeek(), (this.id * 7) - 1).getTime()
              && date.getTime() < this.changeDateBy(this.getEndOfWeek(), (this.id * 7)).getTime()) {
                 this.entries.push(new EventEntry(date, this.getActivitiesInDay(date)));
              }
         });
+        } else {
+            this.dates.forEach(date => {
+                this.entries.push(new EventEntry(date, this.getActivitiesInDay(date)));
+            })
+        }
 
         this.entries.sort((a: EventEntry, b: EventEntry) => {
             return a.date.getTime() - b.date.getTime();
